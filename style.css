@@ -1,0 +1,658 @@
+body {
+	background : linear-gradient(to bottom, slateGray, darkSlateGray, black);
+	background-attachment : fixed;
+	margin : 0;
+}
+
+header {
+	background : black;
+	height : max-content;
+	padding : 5px 5px 5px 10px;
+	cursor : default;
+}
+
+.lang-block {
+	margin : 0;
+	background : black;
+	width : 400px;
+	border-radius : 0 0 30px 0;
+	display : none;
+}
+
+.lang-block span {
+	font : bold 25px Roboto Mono;
+	color : white;
+	float : right;
+	margin-right : 30px;
+	transition : 0.5s;
+	cursor : pointer;
+}
+
+.visible {
+	display : block;
+}
+
+nav ul {
+	list-style : none;
+	display : flex;
+	margin : 0;
+	padding-left : 0;
+}
+
+nav ul li {
+	font : 20px Roboto Mono;
+	margin : 0;
+	padding : 7px;
+	min-width : 90px;
+	text-align : center;
+	border : 2px solid black;
+	background : mediumAquamarine;
+	cursor : pointer;
+	transition : 0.7s;
+	box-sizing : border-box;
+}
+
+h1 {
+	color : mintCream;
+	font-family : Comfortaa;
+	margin-bottom : 30px;
+}
+
+h2 {
+	font-family : PT Sans;
+	margin-left : 15px;
+	margin-top : 0;
+}
+
+article {
+	width : 1050px;
+	height : 300px;
+	margin : 70px auto 70px;
+	background : lavender;
+	box-shadow : 12px 12px rgba(155, 56, 155, 0.7);
+	box-sizing : border-box;
+	transition : 0.5s;
+}
+
+article img {
+	width : 450px;
+	height : 100%;
+	display : block;
+	float : left;
+}
+
+article p {
+	margin-left : 15px;
+	width : 100%;
+	font : 20px PT Sans;
+	text-align : justify;
+	clear : center;
+}
+
+table {
+	margin-left : auto;
+	margin-right : auto;
+	background : aquamarine;
+	border : 3px solid black;
+}
+
+tr td {
+	border : 2px solid black;
+	outline : 1px solid navy;
+	padding : 6px;
+	font : 24px PT Sans;
+}
+
+a {
+	text-decoration : none;
+	color : black;
+}
+
+.logo {
+	font-family : Russo One;
+	font-size : 30px;
+	color : aqua;
+}
+
+.art-w {
+	margin-top : 0;
+	width : 550px;
+	padding : 20px 40px 20px 10px;
+	float : left;
+}
+
+.more {
+	font-family : Russo One;
+	width : max-content;
+	cursor : pointer;
+	transition : 0.7s;
+}
+
+.animate {
+	animation : text-animation 10s infinite ease;
+}
+
+#wrapper1 {
+	width : 80%;
+	margin-top : 50px;
+	margin-left : 50px;
+	margin-right : auto;
+	display : block;
+}
+
+#wrapper1 p {
+	font : 22px Comfortaa;
+	color : mintCream;
+	line-height : 1.3em;
+}
+
+#wrapper2 {
+	display : none;
+}
+
+#wrapper3 {
+	display : none;
+}
+
+#wrapper3 p {
+	font : 22px Comfortaa;
+	color : mintCream;
+	line-height : 1.3em;
+	margin-left : 30px;
+	margin-top : 50px;
+	margin-bottom : 20px;
+}
+
+#wrapper3 ul {
+	font : 22px Comfortaa;
+	color : yellow;
+	margin-left : 70px;
+	margin-top : 20px;
+}
+
+#wrapper4 {
+	display : none;
+	width : 100%;
+	height : 100%;
+	background : url('img4.jpg');
+	background-attachment : fixed;
+}
+
+#wrapper5 {
+	display : none;
+	width : 100%;
+	height : 100%;
+	background : url('img4.jpg');
+	background-attachment : fixed;
+}
+
+#wrapper6 {
+	display : none;
+	width : 100%;
+	height : 100%;
+	background : url('img4.jpg');
+	background-attachment : fixed;
+}
+
+#page1 {
+	background : black;
+	width : 80%;
+	height : 100%;
+	margin : auto;
+	padding : 25px;
+}
+
+#page2 {
+	background : black;
+	width : 80%;
+	height : 100%;
+	min-height : 600px;
+	margin : auto;
+	padding : 25px;
+}
+
+#page3 {
+	background : black;
+	width : 80%;
+	height : 100%;
+	min-height : 600px;
+	margin : auto;
+	padding : 25px;
+}
+
+#num1 {
+	border : 2px solid white;
+	width : 50px;
+	height : 50px;
+	display : inline-block;
+	font : 32px Roboto Mono;
+	color : white;
+	padding : 9px 9px 9px 15px;
+	overflow : hidden;
+	box-sizing : border-box;
+}
+
+#num2 {
+	border : 2px solid white;
+	width : 50px;
+	height : 50px;
+	display : inline-block;
+	font : 32px Roboto Mono;
+	color : white;
+	padding : 9px 9px 9px 15px;
+	overflow : hidden;
+	box-sizing : border-box;
+}
+
+#res {
+	border : 5px solid white;
+	background : #202020;
+	width : 120px;
+	height : 50px;
+	margin-left : 40px;
+	text-align : center;
+	display : inline-block;
+	font : 26px Russo One;
+	color : white;
+	line-height : 1.77em;
+	box-sizing : border-box;
+}
+
+#res2 {
+	background : #202020;
+	width : 120px;
+	height : 50px;
+	margin-left : 40px;
+	margin-top : 0;
+	text-align : center;
+	font : 26px Russo One;
+	color : white;
+	line-height : 2.83em;
+	box-sizing : border-box;
+}
+
+#newInput {
+	border : 2px solid white;
+	width : 120px;
+	height : 50px;
+	display : inline-block;
+	font : 32px Roboto Mono;
+	color : white;
+	text-align : center;
+	padding : 9px 9px 9px 15px;
+	overflow : hidden;
+	box-sizing : border-box;
+}
+
+#newSpan {
+	font : 30px Roboto Mono;
+	vertical-align : super;
+	color : white;
+}
+
+#page1 h2, #page2 h2, #page3 h2 {
+	color : mintCream;
+	font-family : PT Sans;
+}
+
+#page1 p, #page2 p, #page3 p {
+	color : beige;
+	font : 25px PT Sans;
+}
+
+#fontChange {
+	background : aqua;
+	border : 3px solid darkSlateGray;
+	width : max-content;
+	padding : 7px;
+	font : 25px Russo One;
+	box-shadow : 5px 5px rgba(33, 33, 33, 0.8);
+	cursor : pointer;
+}
+
+nav ul li:hover {
+	background : black;
+	color : white;
+}
+
+article:hover {
+	box-shadow : 18px 18px rgba(195, 106, 195, 0.7);
+}
+
+.more:hover {
+	color : blue;
+}
+
+.lang-block span:hover {
+	color : orange;
+}
+
+#fontChange:hover:active {
+	background : navy;
+	color : white;
+}
+
+a:visited {
+	color : green;
+}
+
+@font-face {
+	src : url('robotomono.ttf');
+	font-family : Roboto Mono;
+}
+
+@font-face {
+	src : url('comfortaa.ttf');
+	font-family : Comfortaa;
+}
+
+@font-face {
+	src : url('russoone.ttf');
+	font-family : Russo One;
+}
+
+@font-face {
+	src : url('ptsans.ttf');
+	font-family : PT Sans;
+}
+
+@keyframes text-animation {
+	   0% {
+		color : beige;
+	} 20% {
+		color : gold;
+	} 40% {
+		color : violet;
+	} 60% {
+		color : skyBlue;
+	} 80% {
+		color : springGreen;
+	} 100%{
+		color : beige;
+	}
+}
+
+@media screen and (max-width : 1050px) {
+article {
+	width : 80%;
+	height : 200px;
+}	
+
+article img {
+	width : 40%;
+	height : 200px;
+}
+
+article p {
+	font-size : 14px;
+	margin-bottom : 4px;
+}
+
+article h2 {
+	font-size : 17px;
+}
+
+.art-w {
+	width : 54%;
+	padding : 10px 20px 10px 0;
+}
+
+.more {
+	margin-top : 0px;
+}
+}
+
+@media screen and (max-width : 800px) {
+#wrapper1 {
+	text-align : justify;
+}
+
+hr {
+	margin-top : 40px;
+	margin-bottom : 40px;
+}
+}
+
+@media screen and (max-width : 750px) {
+article {
+	width : 70%;
+	height : max-content;
+ }
+ 
+article img {
+	width : 100%;
+	height : 300px;
+	float : none;
+}
+
+article h2 {
+	text-align : center;
+	font-size : 1.3em;
+}
+
+article p {
+	font-size : 1.3em;
+}
+
+.art-w {
+	width : 95%;
+	margin-left : auto;
+	margin-right : auto;
+	float : none;
+}
+
+.more {
+	margin-top : 12px;
+	margin-left : auto;
+	margin-right : auto;
+	font-size : 1.3em;
+}
+}
+
+@media screen and (max-width : 625px) {
+article {
+	width : 100%;
+	box-shadow : none;
+	border-bottom : 3px double black;
+	border-top : 3px double black;
+	font-size : 1.3em;
+}
+
+article img {
+	height : 100%;
+ }	
+ 
+nav ul li {
+	background : black;
+	color : white;
+	min-width : 120px;
+ }
+ 
+table, tr, td, tr td {
+	background : rgb(143, 218, 255);
+	outline : 2px solid gray;
+}
+
+table {
+	border : 3px solid gray;
+}
+
+tr td {
+    border : 3px ridge slateGray;
+}
+ 
+.logo {
+	text-align : center;
+ }
+
+.lang-block {
+	border-radius : 0 0 0 0 !important;
+	display : block;
+ }
+ 
+ .lang-block span {
+	 font-size : 1.4em;
+	 padding-top : 8px;
+	 box-sizing : border-box;
+ }
+ 
+.first-one {
+	margin-top : 0;
+ }
+ 
+.contact-me {
+	display : none;
+}
+
+.thanks {
+	margin : 0;
+	padding : 12px;
+	background : gray;
+}
+
+#wrapper3 {
+	background : skyBlue;
+	min-height : 520px;
+}
+
+#wrapper3 p {
+	margin : 0;
+}
+
+#wrapper3 ul {
+	background : skyBlue;
+	color : black;
+	margin : 0;
+	padding : 40px 40px 40px 60px;
+}
+
+#lang-menu {
+	display : none;
+}
+ 
+article:hover {
+	box-shadow : none;
+ }	
+}
+
+@media screen and (max-width : 500px) {
+nav {
+    background : black;
+}	
+	
+nav ul li {
+	min-width : 110px;
+	width : max-content;
+	font-size : 1.4em;
+	padding : 2px;
+}
+
+table, tr, td, tr td {
+	font-size : 18px;
+}
+
+.lang-block {
+	margin : auto;
+	padding : 6px;
+	text-align : center;
+}
+
+.lang-block span {
+	font-size : 1.2em;
+	float : none;
+	margin-left : 12%;
+	margin-right : auto;
+}
+
+.logo {
+	font-size : 1.7em;
+}
+
+#wrapper1 {
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 30px;
+ }
+ 
+#wrapper3 ul {
+	font-size : 1.2em;
+}	
+ 
+#wrapper3 .thanks {
+	font-size : 1.3em;
+ }	 
+}
+
+@media screen and (max-width : 400px) {
+nav {
+	background : black;
+}	
+	
+nav ul li {
+	min-width : 95px;
+	font-size : 1.2em;
+}	
+
+.logo {
+	font-size : 1.6em;
+}
+
+.lang-block {
+	width : max-content;
+	margin : auto;
+}
+	
+.lang-block span {
+	margin-left : 6%;
+	font-size : 0.9em;
+ }
+ 
+#res {
+	display : block;
+	margin-left : 0;
+	margin-top : 30px;
+ }	
+}
+
+@media screen and (max-width : 390px) {
+table, tr, td, tr td {
+	font-size : 16px;
+ }	
+ 
+#wrapper3 ul {
+	font-size : 1.1em;
+}	
+ 
+#wrapper3 .thanks {
+	font-size : 1.2em;
+ }
+}
+
+@media screen and (max-width : 360px) {
+nav ul li {
+	min-width : 80px;
+	font-size : 1em;
+}		
+
+.logo {
+	font-size : 1.5em;
+}
+	
+.lang-block span {
+	margin-left : 10%;
+ }
+}
+
+@media screen and (max-width : 350px) {
+table, tr, td, tr td {
+	font-size : 14px;
+ }	
+ 
+#wrapper3 ul {
+	font-size : 0.9em;
+}	
+ 
+#wrapper3 .thanks {
+	font-size : 1em;
+ }	 
+}
